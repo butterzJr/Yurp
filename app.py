@@ -1,10 +1,10 @@
 import streamlit as st
 
 # Set the title of the app
-st.title("Welcome to My First Streamlit App")
+st.title("welcome to my first Streamlit App")
 
 # Add a text input
-name = st.text_input("Enter your name:")
+name = st.text_input("Enter your name: ")
 
 # Display the name entered by the user
 if name:
