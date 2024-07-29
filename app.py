@@ -28,14 +28,14 @@ def respond(user_input):
 
 # Example conversation loop
 def chatbot():
-    print("Hi, I'm your medical assistant. How can I help you today?")
+    st.write("Hi, I'm your medical assistant. How can I help you today?")
     while True:
         user_input = input("You: ")
         if user_input.lower() == "quit":
-            print("Chatbot: Thank you. Take care!")
+            st.write("Chatbot: Thank you. Take care!")
             break
         else:
-            print("Chatbot:", respond(user_input))
+            st.write("Chatbot:", respond(user_input))
 
 if __name__ == "__main__":
     chatbot()
