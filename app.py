@@ -32,7 +32,7 @@ def chatbot():
     st.write("Hi, I'm your medical assistant. How can I help you today?")
     while True:
         user_input = input("You: ")
-            print("You:", user_input)
+        print("You:", user_input)
         if user_input.lower() == "quit":
             st.write("Chatbot: Thank you. Take care!")
             break
