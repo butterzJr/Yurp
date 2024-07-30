@@ -6,7 +6,7 @@ name = st.text_input("Enter your name:")
 if name:
     st.write(f"Hello, {name}! Welcome to KidzCareHub.")
 
-
+user_input = st.text_input("You:")
     
 import re
 
