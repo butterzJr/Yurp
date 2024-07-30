@@ -23,7 +23,7 @@ pairs = [
 
 # Function to respond to user input based on defined patterns
 def respond(user_input):
-user_input = st.text_input("You:")
+    user_input = st.text_input("You:")
     user_input = user_input.lower()  # Convert input to lowercase for case-insensitive matching
     for pattern, response in pairs:
         if re.search(pattern, user_input):
