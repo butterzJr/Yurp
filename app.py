@@ -31,7 +31,6 @@ def respond(user_input):
 def chatbot():
     st.write("Hi, Welcome to KidzCareHub. How can I help you today?")
     while True:
-        user_input = st.text_input("You: ")
         if user_input.lower() == "quit":
             st.write("Chatbot: Thank you. Take care!")
             break
