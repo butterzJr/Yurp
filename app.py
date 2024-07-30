@@ -28,17 +28,21 @@ def respond(user_input):
     return "I'm sorry, I didn't understand that. Can you please provide more details?"
 
 # Example conversation loop
-st.title("KidzCareHub ChatBot")
-name = st.text_input("Enter your name:")
-
-if name:
-    st.write(f"Hello, {name}! Welcome to KidzCareHub.")
+def chatbot():
+    st.title("Medical Assistant Chatbot")
+    st.write("Hi, I'm your medical assistant. How can I help you today?")
     
+    # Text input for user
     user_input = st.text_input("You:")
     
-    if user_input:
-        if user_input.lower() == "quit":
-            st.write("Chatbot: Thank you. Take care!")
-        else:
-            response = respond(user_input)
-            st.write("Chatbot:", response)
+    # Check if user wants to quit
+    if user_input.lower() == "quit":
+        st.write("Chatbot: Thank you. Take care!")
+    else:
+        # Get response based on user input
+        response = respond(user_input)
+        st.write("Chatbot:", response)
+
+if __name__ == "__main__":
+    chatbot()
+            
