@@ -5,6 +5,8 @@ name = st.text_input("Enter your name:")
 
 if name:
     st.write(f"Hello, {name}! Welcome to KidzCareHub.")
+
+
     
 import re
 
@@ -21,6 +23,7 @@ pairs = [
 
 # Function to respond to user input based on defined patterns
 def respond(user_input):
+user_input = st.text_input("You:")
     user_input = user_input.lower()  # Convert input to lowercase for case-insensitive matching
     for pattern, response in pairs:
         if re.search(pattern, user_input):
@@ -32,7 +35,7 @@ def chatbot():
     st.write("Hi, I'm your medical assistant. How can I help you today?")
     while True:
         user_input = input("You: ")
-        print("You:", user_input)
+        st.write("You:", user_input)
         if user_input.lower() == "quit":
             st.write("Chatbot: Thank you. Take care!")
             break
