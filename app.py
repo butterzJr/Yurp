@@ -30,6 +30,7 @@ def respond(user_input):
 # Example conversation loop
 def chatbot():
     st.write("Hi, Welcome to KidzCareHub. How can I help you today?")
+    user_input = st.text_input("You:")
     while True:
         if user_input.lower() == "quit":
             st.write("Chatbot: Thank you. Take care!")
